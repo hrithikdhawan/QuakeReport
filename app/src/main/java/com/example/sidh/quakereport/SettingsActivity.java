@@ -45,6 +45,8 @@ public class SettingsActivity extends AppCompatActivity
             addPreferencesFromResource(R.xml.setting_main);
             Preference minMagnitudePreference=findPreference(getString(R.string.setting_min_mag_key));
             bindPreferenceSummaryToValue(minMagnitudePreference);
+            Preference maxMagnitudePrefernce=findPreference(getString(R.string.setting_max_mag_key));
+            bindPreferenceSummaryToValue(maxMagnitudePrefernce);
             Preference orderByPreference=findPreference(getString(R.string.setting_order_by_key));
             bindPreferenceSummaryToValue(orderByPreference);
             Preference limitPreference=findPreference(getString(R.string.setting_limit_key));

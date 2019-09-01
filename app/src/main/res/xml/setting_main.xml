@@ -14,6 +14,12 @@
         android:selectAllOnFocus="true"
         android:title="@string/setting_min_mag_label"/>
     <EditTextPreference
+        android:defaultValue="@string/setting_max_magnitude_default"
+        android:inputType="numberDecimal"
+        android:key="@string/setting_max_mag_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/setting_max_mag_label"/>
+    <EditTextPreference
         android:defaultValue="@string/setting_limit_default"
         android:inputType="number"
         android:key="@string/setting_limit_key"

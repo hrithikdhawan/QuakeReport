@@ -58,7 +58,7 @@ public class InformationLoader extends AsyncTaskLoader<ArrayList<Information>> {
                 stream = connection.getInputStream();
                 jsonResponse = readFromStream(stream);
             }
-            else Log.e("","Error Resonse Code");
+            else Log.e("","Error Response Code");
         } catch (IOException exception) {
             Log.e(" ", "Problem in making a connection", exception);
         } finally {

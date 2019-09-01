@@ -78,7 +78,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     {
         SharedPreferences sharedPreference= PreferenceManager.getDefaultSharedPreferences(this);
         String minMagnitude=sharedPreference.getString(getString(R.string.setting_min_mag_key),getString(R.string.setting_min_magnitude_default));
-        Log.i(" magnitude ",minMagnitude);
+        Log.i(" minMagnitude ",minMagnitude);
+        String maxMagnitude=sharedPreference.getString(getString(R.string.setting_max_mag_key),getString(R.string.setting_max_magnitude_default));
+        Log.i(" maxmMagnitude ",minMagnitude);
         String orderBy=sharedPreference.getString(getString(R.string.setting_order_by_key),getString(R.string.setting_order_by_default));
         Log.i("Order By",orderBy);
         String limit=sharedPreference.getString(getString(R.string.setting_limit_key),getString(R.string.setting_limit_default));
@@ -90,6 +92,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         Log.i(d,date.toString());
         String end=sharedPreference.getString(getString(R.string.setting_end_time_key),d);
         Log.i("start",start);
+        Log.i("end",end);
         Uri baseUri=Uri.parse(USGS_URL);
         Uri.Builder uriBuilder=baseUri.buildUpon();
         uriBuilder.appendQueryParameter("format","geojson");
@@ -97,7 +100,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         uriBuilder.appendQueryParameter("endtime",end);
         uriBuilder.appendQueryParameter("limit",limit);
         uriBuilder.appendQueryParameter("minmag",minMagnitude);
+        uriBuilder.appendQueryParameter("maxmag",maxMagnitude);
         uriBuilder.appendQueryParameter("orderby",orderBy);
+        //uriBuilder.appendQueryParameter("orderby",orderBy);
+        Log.i("URL", uriBuilder.toString());
         return new InformationLoader(this,uriBuilder.toString());
     }
 
