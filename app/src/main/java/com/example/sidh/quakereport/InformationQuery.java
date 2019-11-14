@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Created by sidh on 1/30/2017.
+ * Created by sidh on 10/08/2019.
  */
 public final class InformationQuery
 {

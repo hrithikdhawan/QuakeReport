@@ -1,7 +1,7 @@
 package com.example.sidh.quakereport;
 
 /**
- * Created by sidh on 1/30/2017.
+ * Created by sidh on 09/30/2019.
  */
 public class Information
 {

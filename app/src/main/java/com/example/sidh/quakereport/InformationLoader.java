@@ -15,7 +15,7 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 
 /**
- * Created by sidh on 2/3/2017.
+ * Created by sidh on 10/22/2019.
  */
 public class InformationLoader extends AsyncTaskLoader<ArrayList<Information>> {
 

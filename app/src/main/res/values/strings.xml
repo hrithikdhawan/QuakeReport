@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quake Report</string>
+    <string name="app_name">Seismic Activity Tracker</string>
     <string name="setting_menu">Settings</string>
     <string name="NoInternet">No Internet Connection</string>
     <string name="settings_title">Earthquake Search Settings</string>
